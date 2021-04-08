@@ -73,14 +73,8 @@ User: the model name,
 Attributes: the table fields and data type structure
 
 
-## Undo migration 
-```bash
-    sequelize db:migrate:undo:all
-```
-
-
 ## One to many association 
-in your users model in models -> user add 
+in your users model (User.associate) in server -> models -> user add: 
 
 ```bash
     User.hasMany(models.Cloth, {
@@ -93,10 +87,14 @@ in your users model in models -> user add
 * where Cloth is another model you must have created.
 
 
-* In a case where ClothModel is another model 
-So we must have done this  : sequelize model:create --name Cloth --attributes name:string
+* In a case where Cloth Model is another model 
+So we must have done this  : 
 
-Then that means we must edit out Cloth model to be :
+```bash
+sequelize model:create --name Cloth --attributes name:string
+```
+
+Then that means we must edit out Cloth model (Cloth.associate) to be :
 
 ```bash
         Cloth.associate = (models) => {
@@ -114,6 +112,8 @@ Then that means we must edit out Cloth model to be :
     https://www.getpostman.com/collections/88bc1498ad893f136a3d
  
  Feel free to clone and edit to your specifications. Add or Remove to your suit. 
+
+ I will update from time to time.
 
  Happy coding :smiling_face_with_three_hearts:	
 
