@@ -111,7 +111,9 @@ Then that means we must edit out Cloth model to be :
         return Cloth;
 ```
 
+ simple postman collection for you to test: 
 
+    https://www.getpostman.com/collections/88bc1498ad893f136a3d
  
  Feel free to clone and edit to your specifications. Add or Remove to your suit. 
 
