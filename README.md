@@ -61,7 +61,7 @@ to use mysql or sqlserver. i have installed mssql, and mysql in package.json fil
 ## *bonus postgres:
 to create a database with postgres use command 
 ```bash
-    createdb bookstore
+    createdb testdb
 ```
 
 
