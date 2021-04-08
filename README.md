@@ -10,22 +10,20 @@ This is just a simple Express Sequelize and Postgres (PERN) starter installation
 
     2. Checkout this repo, install dependencies, then start the gulp process with the following:
 
-    ```bash
-
+```bash
     > git clone https://github.com/Ayorinde-Codes/node-express-sequelize-postgres-template.git
     > cd node-express-sequelize-postgres-template
     > npm install
     > npm start
-
-    ```
+```
 
 ## Generate Environment Variable
 
 simple run:
 
-    ```bash
-        cp .env.example .env 
-    ```
+```bash
+cp .env.example .env 
+```
 in your terminalof the the root directory
 
 ## Features
@@ -84,7 +82,7 @@ Attributes: the table fields and data type structure
 ## One to many association 
 in your users model in models -> user add 
 
- ```bash
+```bash
     User.hasMany(models.Cloth, {
             foreignKey: 'userId',
         });
@@ -100,7 +98,7 @@ So we must have done this  : sequelize model:create --name Cloth --attributes na
 
 Then that means we must edit out Cloth model to be :
 
- ```bash
+```bash
         Cloth.associate = (models) => {
         // associations can be defined here
         Cloth.belongsTo(models.User, {
