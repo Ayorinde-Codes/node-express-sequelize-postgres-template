@@ -24,7 +24,7 @@ simple run:
 ```bash
 cp .env.example .env 
 ```
-in your terminalof the the root directory
+in your terminal of your root directory
 
 ## Features
 - Controller
