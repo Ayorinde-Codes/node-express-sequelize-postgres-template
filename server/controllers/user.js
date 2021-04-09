@@ -34,7 +34,7 @@ class Users {
 
         } catch (error) {
 
-            return serverError(res, 'Server Error', {})
+            return serverError(res, 'Server Error', error.message)
         }
 
       }
