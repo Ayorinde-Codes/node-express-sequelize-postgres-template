@@ -30,6 +30,7 @@ in your terminal of your root directory
 - Controller
 - Model
 - Server Responses 
+- Service class (make external api request)
 
 
 ## Migration:
